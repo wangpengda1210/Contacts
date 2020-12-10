@@ -1,0 +1,90 @@
+[1;31m
+Start test 1[0m
+
+=[menu] Enter action (add, list, search, count, exit): > exit
+[1;31m
+Start test 2[0m
+open phonebook.db
+
+>[menu] Enter action (add, list, search, count, exit): > count
+The Phone Book has 0 records.
+
+=[menu] Enter action (add, list, search, count, exit): > exit
+[1;31m
+Start test 3[0m
+open phonebook.db
+
+<[menu] Enter action (add, list, search, count, exit): > add
+0Enter the type (person, organization): > person
+%Enter the name of the person: > John
+)Enter the surname of the person: > Smith
+Enter the birth date: > 
+Bad birth date!
+Enter the gender (M, F): > 
+Bad gender!
+ Enter the number: > 123 456 789
+The record created!
+
+>[menu] Enter action (add, list, search, count, exit): > count
+The Phone Book has 1 records.
+
+=[menu] Enter action (add, list, search, count, exit): > exit
+[1;31m
+Start test 4[0m
+open phonebook.db
+
+<[menu] Enter action (add, list, search, count, exit): > add
+0Enter the type (person, organization): > person
+%Enter the name of the person: > John
+)Enter the surname of the person: > Smith
+Enter the birth date: > 
+Bad birth date!
+Enter the gender (M, F): > 
+Bad gender!
+ Enter the number: > 123 456 789
+The record created!
+
+=[menu] Enter action (add, list, search, count, exit): > list
+1. John Smith
+2. John Smith
+
+*[list] Enter action ([number], back): > 1
+Name: John
+Surname: Smith
+Birth date: [no data]
+Gender: [no data]
+Number: 123 456 789
+Time created: 2020-12-10T11:20
+"Time last edit: 2020-12-10T11:20
+
+3[record] Enter action (edit, delete, menu): > menu
+
+=[menu] Enter action (add, list, search, count, exit): > exit
+[1;31m
+Start test 5[0m
+open phonebook.db
+
+<[menu] Enter action (add, list, search, count, exit): > add
+6Enter the type (person, organization): > organization
+*Enter the organization name: > Pizza Shop
+ Enter the address: > Wall St. 1
+*Enter the number: > +0 (123) 456-789-9999
+The record created!
+
+=[menu] Enter action (add, list, search, count, exit): > list
+1. John Smith
+2. John Smith
+3. Pizza Shop
+
+*[list] Enter action ([number], back): > 1
+Name: John
+Surname: Smith
+Birth date: [no data]
+Gender: [no data]
+Number: 123 456 789
+Time created: 2020-12-10T11:20
+"Time last edit: 2020-12-10T11:20
+
+3[record] Enter action (edit, delete, menu): > menu
+
+=[menu] Enter action (add, list, search, count, exit): > exit
